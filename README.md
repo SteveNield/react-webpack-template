@@ -1,2 +1,2 @@
 # webpack-scaffold
-Minimum requirements for webpack / babel development environment setup
+Template repository for react, webpack, babel application
