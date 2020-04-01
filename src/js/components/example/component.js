@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import './style.scss';
 
-export default () => {
+export default ({
+  message, 
+  count, 
+  onIncrementClick
+}) => {
   return (
-    <div className="example-component">hello there</div>
+    <div className="example-component">
+      <div 
+        className="message">
+        {message}
+        <span>
+          ({count})
+        </span>
+      </div>
+      <button 
+        onClick={onIncrementClick}>
+        Click Here to Increment!
+      </button>
+    </div>
   );
 }

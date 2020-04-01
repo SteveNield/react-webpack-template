@@ -1,4 +1,9 @@
 .example-component {
-  font-weight: bold;
-  font-size: 24px;
+  .message {
+    font-weight: 600;
+  }
+
+  .counter {
+    color: #222;
+  }
 }
