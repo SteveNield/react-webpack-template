@@ -6,8 +6,8 @@ import App from './containers/app';
 import { ExampleProvider } from './store/example/context';
 
 ReactDOM.render(
-    <ExampleProvider>
-        <App />
-    </ExampleProvider>,
-    document.getElementById('appContainer')
+  <ExampleProvider>
+    <App />
+  </ExampleProvider>,
+  document.getElementById('appContainer')
 );
