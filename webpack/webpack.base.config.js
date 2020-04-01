@@ -6,6 +6,9 @@ const copyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = env  => {
   return {
     entry: './src/js/index',
+    output: {
+      filename: '[name].[hash].js'
+    },
     module: {
       rules: [
         {
@@ -32,7 +35,7 @@ module.exports = env  => {
         template: './src/index.html', 
         filename: './index.html' 
       }),
-      new extractTextPlugin('style.css'),
+      new extractTextPlugin('app.[md5:contenthash:hex:20].css'),
       new dotEnvPlugin(),
       new copyWebpackPlugin([{
         from: 'static'
